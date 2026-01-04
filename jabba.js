@@ -277,5 +277,6 @@ function Prediction(string,newData,predictionLength){
 window.Jabba = {
 	respond:(txt,l=5)=>{return Prediction(txt,trainingData,l);}
 }
-console.log("To Jabba.js: 'hello' \nJabba.js says: "+window.Jabba.respond("hello"));
+let test = "nigdngjdj didjfoasoij ";
+console.log("To Jabba.js: '"+test+"' \nJabba.js says: "+window.Jabba.respond(test));
 /*jabba.js 1.0 made by jy*/

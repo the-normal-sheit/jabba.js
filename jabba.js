@@ -235,7 +235,7 @@ function Prediction(string, newData, predictionLength) {
             sentences.forEach(sentence => {data.push(sentence);});
         }
     });
-    console.log(data);
+    //console.log(data);
     
     let nextPhrase = (newString, variety=5, badNgramz=['shietzmane']) => {
         let importanceMap = {s:0.5, c:1.3}

@@ -224,6 +224,7 @@ function Prediction(string,newData,predictionLength){
 				if(sentences[i+1] !== undefined){
 					result+=` |output|: `+sentences[i+1];
 				}
+				if(Math.random() > 0.9)data.push(sentences[i+1]);
 				data.push(result);
 			}
 		} else {
@@ -237,6 +238,7 @@ function Prediction(string,newData,predictionLength){
 		let result = '';
 		let scores = [];
 		for(let i=0;i<data.length;i++){
+			console.log(data[i]);
 			let dataString = data[i].split('|output|:');
 			let newScore = 1;
 			let dataStringResult = '';
@@ -264,7 +266,7 @@ function Prediction(string,newData,predictionLength){
 	let pastPhrases = [finalResult.substring(0)]; //too lazy to figure out if js fucks up string copies or not
 	for(let i=0;i<predictionLength;i++){
 		console.log(pastPhrases);
-		let nextPiece = nextPhrase(pastPhrases[pastPhrases.length-1],2,pastPhrases);
+		let nextPiece = nextPhrase(pastPhrases[pastPhrases.length-1],10,pastPhrases);
 		let deadPhrase = nextPiece+Punctuation(nextPiece)+` `;
 		pastPhrases.push(nextPiece);
 		finalResult+=deadPhrase;

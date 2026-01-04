@@ -1,4 +1,8 @@
-/*jabba.js 1.0 made by jy*/
+/*
+
+	jabba.js 1.1 made by jy
+
+*/
 let trainingData = [
 `
 You know what? I admitted it. I'm done with you all. These haters won't leave me alone and you guys are next to harass me for harassing the most subscribed Brony fan "James" that we wrongly targeted. They ruined my entire career due to their clueless drama. They never accepted my apology like little midgets.
@@ -224,7 +228,7 @@ function Prediction(string, newData, predictionLength) {
                 if(sentences[i+1] !== undefined) {
                     result += ` |output|: ` + sentences[i+1];
                 }
-                if(Math.random() > 0.2) data.push(sentences[i+1] || "");
+                if(Math.random() > 0.5) data.push(sentences[i+1] || "");
                 data.push(result);
             }
         } else {
@@ -277,10 +281,14 @@ function Prediction(string, newData, predictionLength) {
         pastPhrases.push(nextPiece);
         finalResult += deadPhrase;
     }
-    return `${finalResult.replace(firstString, "")}`
+    return `${finalResult.replace(firstString, "").replaceAll("\\n"," ")}`
 }
 window.Jabba = {
 	respond:(txt,l=5)=>{return Prediction(txt,trainingData,l);}
 }
 console.log("To Jabba.js: 'hello' \nJabba.js says: "+window.Jabba.respond("hello"));
-/*jabba.js 1.0 made by jy*/
+/*
+
+	jabba.js 1.1 made by jy
+
+*/

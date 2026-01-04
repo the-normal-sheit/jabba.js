@@ -213,70 +213,74 @@ function Coherence(text, corpus) {
   
   return Math.round((score / weights) * 100)/100;
 }
-function Prediction(string,newData,predictionLength){
-	let data = [];
-	newData.forEach((textPassage,dataIndex) => {
-		let sentences = textPassage.split(". ");
-		if(sentences.length > 1){
-			for(let i=0;i<sentences.length;i++){
-				let sentence = sentences[i];
-				let result = sentence;
-				if(sentences[i+1] !== undefined){
-					result+=` |output|: `+sentences[i+1];
-				}
-				if(Math.random() > 0.9)data.push(sentences[i+1]);
-				data.push(result);
-			}
-		} else {
-			sentences.forEach(sentence => {data.push(sentence);});
-		}
-	});
-	console.log(data);
-	let nextPhrase = (newString,variety=5,badNgramz=['shietzmane']) => {
-		let importanceMap = {s:0.5,c:1.3}
-		console.log(typeof badNgramz);
-		let result = '';
-		let scores = [];
-		for(let i=0;i<data.length;i++){
-			console.log(data[i]);
-			let dataString = data[i].split('|output|:');
-			let newScore = 1;
-			let dataStringResult = '';
-			if(dataString.length > 1){
-				dataStringResult = dataString[1];
-			} else {
-				dataStringResult = dataString[0]
-			}
-			newScore = 
-				(Similarity(newString,dataString[0])*importanceMap.s)
-				+ 
-				(Coherence(newString+" "+dataStringResult,newData)*importanceMap.c);
-			if(!badNgramz.some(r => dataStringResult.includes(r))){scores.push({
-				score:newScore,
-				content:dataStringResult
-			});}
-		}
-		scores = scores.toSorted((a,b)=>b.score-a.score);
-		console.log(scores);
-		scores = scores.slice(0,variety);
-		return scores[Math.floor(Math.random()*scores.length)].content;
-	}
-	let firstString = string+Punctuation(string)+` `;
-	let finalResult = firstString;
-	let pastPhrases = [finalResult.substring(0)]; //too lazy to figure out if js fucks up string copies or not
-	for(let i=0;i<predictionLength;i++){
-		console.log(pastPhrases);
-		let nextPiece = nextPhrase((pastPhrases[pastPhrases.length-2] || "")+pastPhrases[pastPhrases.length-1],10,pastPhrases);
-		let deadPhrase = nextPiece+Punctuation(nextPiece)+` `;
-		pastPhrases.push(nextPiece);
-		finalResult+=deadPhrase;
-		
-	}
-	return `${finalResult.replace(firstString,"")} `
+function Prediction(string, newData, predictionLength) {
+    let data = [];
+    newData.forEach((textPassage, dataIndex) => {
+        let sentences = textPassage.split(". ");
+        if(sentences.length > 1) {
+            for(let i = 0; i < sentences.length; i++) {
+                let sentence = sentences[i];
+                let result = sentence;
+                if(sentences[i+1] !== undefined) {
+                    result += ` |output|: ` + sentences[i+1];
+                }
+                if(Math.random() > 0.9) data.push(sentences[i+1]);
+                data.push(result);
+            }
+        } else {
+            sentences.forEach(sentence => {data.push(sentence);});
+        }
+    });
+    console.log(data);
+    
+    let nextPhrase = (newString, variety=5, badNgramz=['shietzmane']) => {
+        let importanceMap = {s:0.5, c:1.3}
+        console.log(typeof badNgramz);
+        let result = '';
+        let scores = [];
+        for(let i = 0; i < data.length; i++) {
+            console.log(data[i]);
+            let dataString = data[i].split('|output|:');
+            let newScore = 1;
+            let dataStringResult = '';
+            if(dataString.length > 1) {
+                dataStringResult = dataString[1];
+            } else {
+                dataStringResult = dataString[0]
+            }
+            newScore = 
+                (Similarity(newString, dataString[0]) * importanceMap.s)
+                + 
+                (Coherence(newString + " " + dataStringResult, newData) * importanceMap.c);
+            if(!badNgramz.some(r => dataStringResult.includes(r))) {
+                scores.push({
+                    score: newScore,
+                    content: dataStringResult
+                });
+            }
+        }
+        scores = scores.toSorted((a,b) => b.score - a.score);
+        console.log(scores);
+        scores = scores.slice(0, variety);
+        return scores[Math.floor(Math.random() * scores.length)].content;
+    }
+    
+    let firstString = string + Punctuation(string) + ` `;
+    let finalResult = firstString;
+    let pastPhrases = [finalResult.substring(0)];
+    
+    for(let i = 0; i < predictionLength; i++) {
+        console.log(pastPhrases);
+        let contextString = (pastPhrases.length >= 2 ? pastPhrases[pastPhrases.length-2] : "") + pastPhrases[pastPhrases.length-1];
+        let nextPiece = nextPhrase(contextString, 10, pastPhrases);
+        let deadPhrase = nextPiece + Punctuation(nextPiece) + ` `;
+        pastPhrases.push(nextPiece);
+        finalResult += deadPhrase;
+    }
+    return `${finalResult.replace(firstString, "")}`
 }
 window.Jabba = {
 	respond:(txt,l=5)=>{return Prediction(txt,trainingData,l);}
 }
-let test = "nigdngjdj didjfoasoij ";
-console.log("To Jabba.js: '"+test+"' \nJabba.js says: "+window.Jabba.respond(test));
+console.log("To Jabba.js: 'hello' \nJabba.js says: "+window.Jabba.respond("hello"));
 /*jabba.js 1.0 made by jy*/

@@ -224,7 +224,7 @@ function Prediction(string, newData, predictionLength) {
                 if(sentences[i+1] !== undefined) {
                     result += ` |output|: ` + sentences[i+1];
                 }
-                if(Math.random() > 0.9) data.push(sentences[i+1]);
+                if(Math.random() > 0.2) data.push(sentences[i+1] || "");
                 data.push(result);
             }
         } else {

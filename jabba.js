@@ -84,7 +84,24 @@ really wanted to have fun and that's all. There was only one user on Discord who
 inside of normal Discord server who still knows me that I was doing back in 2015 with my forbidden username
 that I have used for years making logo editing content and still obsessed with "class key chew poe" (or Splaat,
 if you know what I mean) until I finally got rid of that thing.
+`,
 `
+My question: You kiddies ruin my site definitely like flooding a circumstance by spamming IPs, all BonziWORLDs were shut down,
+because it's all your fault for destroying like a neglector from children. I've had enough with kiddies by using javascript 
+all the time. If you think you are discovering another bonziworld, I recommend you to play Cave Story, Minecraft, Roblox or
+Gameboy Advance. If you are investigating out to find another bonziworld, don't you dare to get bonziworld and the reputation 
+- it's you kiddo, I will not gonna to accept your apology. Making BonziWORLD is instantly destroyed by kiddies, we are going to
+find your websites by clicking on it and think you're pathetic for hosting or creating BonziWORLD. Get a life, OnuteWORLD isn't a
+life, maybe you apologize and quit BonziWORLD already. Imma just destroy bonziworld, you never get bonziworld. OH IF YOU DARE 
+TO PORT FORWARD BONZIWORLD, C'MON, YOU LITHIE BITCH! I'LL JUST GOING TO ATTACK YOUR IP! (for bonziworld kiddies). 
+You're going to be pathetic, go get a life, GET A LIFE right now!
+`,
+`
+I can't take it anymore, you must are psychologic and you will ever think at me, huh? What are you going to do this for me? An vacation or something? So stay here and get your butt for your punishment. Stay up, and don't wanna to be friends, when you level up to criticize everyone, and just get higher and higher, so get a some racist words, bitch! And you will rather to say the N-word to me? You are not black, you are white.
+`,
+`
+What location that you hate BonziWORLD, did you send into other states on USA? Pulling states is illegal, so irrelevant. You want to be worstest person on BonziWORLD. Kiss your mom was a gay when FBI is coming to raid your house, you're perole, right? Alright, well your siblings are fuckin gay, they don't want you to hate BonziWORLD, so get the pathetic life loser. Buy some drugs, then get sick for drugs, and go to hospital you dumb. Go to heaven while you have ever died. Or I will fight like a karate then I will kick your organs, stomach and brains off.
+`,
 ];
 console.log("Jabba.Js is initializing.");
 function Similarity(a, b) {
@@ -295,6 +312,7 @@ console.log("To Jabba.js: 'hello' \nJabba.js says: "+window.Jabba.respond("hello
 	jabba.js 1.1 made by jy
 
 */
+
 
 
 

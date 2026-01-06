@@ -154,7 +154,6 @@ function Punctuation(text) {
     "!": Math.min(eScore / total, 10),
     ".": Math.min(pScore / total, 10)
   };
-  console.log(score);
   return Object.keys(score).toSorted((a,b)=>b-a)[Math.floor(Math.random()*Object.keys(score).length)];
 }
 function Coherence(text, corpus) {
@@ -239,11 +238,9 @@ function Prediction(string, newData, predictionLength) {
     
     let nextPhrase = (newString, variety=5, badNgramz=['shietzmane']) => {
         let importanceMap = {s:0.5, c:1.3}
-        console.log(typeof badNgramz);
         let result = '';
         let scores = [];
         for(let i = 0; i < data.length; i++) {
-            console.log(data[i]);
             let dataString = data[i].split('|output|:');
             let newScore = 1;
             let dataStringResult = '';
@@ -264,7 +261,6 @@ function Prediction(string, newData, predictionLength) {
             }
         }
         scores = scores.toSorted((a,b) => b.score - a.score);
-        console.log(scores);
         scores = scores.slice(0, variety);
         return scores[Math.floor(Math.random() * scores.length)].content;
     }
@@ -274,7 +270,6 @@ function Prediction(string, newData, predictionLength) {
     let pastPhrases = [finalResult.substring(0)];
     
     for(let i = 0; i < predictionLength; i++) {
-        console.log(pastPhrases);
         let contextString = (pastPhrases.length >= 2 ? pastPhrases[pastPhrases.length-2] : "") + pastPhrases[pastPhrases.length-1];
         let nextPiece = nextPhrase(contextString, 10, pastPhrases);
         let deadPhrase = nextPiece + Punctuation(nextPiece) + ` `;
@@ -292,3 +287,4 @@ console.log("To Jabba.js: 'hello' \nJabba.js says: "+window.Jabba.respond("hello
 	jabba.js 1.1 made by jy
 
 */
+

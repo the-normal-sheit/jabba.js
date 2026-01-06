@@ -281,7 +281,7 @@ function Prediction(string, newData, predictionLength) {
         finalResult += deadPhrase;
     }
 	let time = performance.now() - startingPeriod;
-	time = time.toString().substring(0,3);
+	time = time.toString().substring(0,4);
 	console.log("Prediction took "+time+" ms.");
     return `${finalResult.replace(firstString, "").replaceAll("\\n"," ")}`;
 	
@@ -295,6 +295,7 @@ console.log("To Jabba.js: 'hello' \nJabba.js says: "+window.Jabba.respond("hello
 	jabba.js 1.1 made by jy
 
 */
+
 
 
 

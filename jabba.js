@@ -86,6 +86,7 @@ that I have used for years making logo editing content and still obsessed with "
 if you know what I mean) until I finally got rid of that thing.
 `
 ];
+console.log("Jabba.Js is initializing.");
 function Similarity(a, b) {
   if (a === b) return 1;
   if (a.length === 0 || b.length === 0) return 0;
@@ -216,7 +217,10 @@ function Coherence(text, corpus) {
   
   return Math.round((score / weights) * 100)/100;
 }
+// runtime = 1;
 function Prediction(string, newData, predictionLength) {
+	let startingPeriod = performance.now()
+	console.log("Prediction generating...");
     let data = [];
     newData.forEach((textPassage, dataIndex) => {
         let sentences = textPassage.split(". ");
@@ -276,7 +280,10 @@ function Prediction(string, newData, predictionLength) {
         pastPhrases.push(nextPiece);
         finalResult += deadPhrase;
     }
-    return `${finalResult.replace(firstString, "").replaceAll("\\n"," ")}`
+	let time = performance.now() - startingPeriod;
+	console.log("Prediction took "+time+" ms.");
+    return `${finalResult.replace(firstString, "").replaceAll("\\n"," ")}`;
+	
 }
 window.Jabba = {
 	respond:(txt,l=5)=>{return Prediction(txt,trainingData,l);}
@@ -287,4 +294,5 @@ console.log("To Jabba.js: 'hello' \nJabba.js says: "+window.Jabba.respond("hello
 	jabba.js 1.1 made by jy
 
 */
+
 

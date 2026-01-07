@@ -309,16 +309,18 @@ window.messageHistory = [];
 window.Jabba = {
 	respond:(txt,l=5)=>{return Prediction(txt,trainingData,l);},
 	prompt:(txt)=>{
+		if(window.messageHistory.length > 10)window.messageHistory=[]; //temporary band-aid to prevent jabba from training himself
 		let result = Prediction(txt,[...trainingData,...messageHistory],Math.floor(Math.random()*(5-3))+3);
 		window.messageHistory.push(txt+". "+result.replaceAll("? ",". ").replaceAll("! ",". ").split(". ")[0]);
 		
 		console.log("To Jabba.js: "+txt+"\n ----- \n Jabba.js says: "+result+"\n -----");
 	}
 }
-window.Jabba.prompt("hello there danielius. i need the  err uh javascripts. code. l33t");
+window.Jabba.prompt("hello there danielius i need the  l33t js floodings");
 })();
 /*
 
 	jabba.js 1.2 made by jy
 
 */
+

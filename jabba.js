@@ -1,6 +1,6 @@
 /*
 
-	jabba.js 1.1 made by jy
+	jabba.js 1.2 made by jy
 
 */
 'use strict';
@@ -315,17 +315,10 @@ window.Jabba = {
 		console.log("To Jabba.js: "+txt+"\n ----- \n Jabba.js says: "+result+"\n -----");
 	}
 }
-console.log("To Jabba.js: 'hello' \nJabba.js says: "+window.Jabba.respond("hello"));
+window.Jabba.prompt("hello there danielius. i need the  err uh javascripts. code. l33t");
 })();
 /*
 
-	jabba.js 1.1 made by jy
+	jabba.js 1.2 made by jy
 
 */
-
-
-
-
-
-
-

@@ -305,8 +305,15 @@ function Prediction(string, newData, predictionLength) {
     return `${finalResult.replace(firstString, "").replaceAll("\\n"," ")}`;
 	
 }
+window.messageHistory = [];
 window.Jabba = {
-	respond:(txt,l=5)=>{return Prediction(txt,trainingData,l);}
+	respond:(txt,l=5)=>{return Prediction(txt,trainingData,l);},
+	prompt:(txt)=>{
+		let result = Prediction(txt,[...trainingData,...messageHistory],Math.floor(Math.random()*(5-3))+3);
+		window.messageHistory.push(txt+". "+result.replaceAll("? ",". ").replaceAll("! ",". ").split(". ")[0]);
+		
+		console.log("To Jabba.js: "+txt+"\n ----- \n Jabba.js says: "+result+"\n -----");
+	}
 }
 console.log("To Jabba.js: 'hello' \nJabba.js says: "+window.Jabba.respond("hello"));
 })();
@@ -315,6 +322,7 @@ console.log("To Jabba.js: 'hello' \nJabba.js says: "+window.Jabba.respond("hello
 	jabba.js 1.1 made by jy
 
 */
+
 
 
 

@@ -1,6 +1,6 @@
 /*
 
-	jabba.js 1.2 made by jy
+	jabba.js 1.3 made by jy
 
 */
 'use strict';
@@ -20,15 +20,31 @@ Everything I have done on the internet, I don't think that's an option for writi
 James and Karon, this is all your fault. You literally killed my channel. I hope you two get deplatformized for the rest of your lives.
 
 And who's watching this post...
-Wow, just fucking WOW! This is why we can't have nice things! And you know what? I'm out of here. Have fun here in my dusty YouTube channel because I am not coming back. I'm sick and tired of you going around like a fucking bee swarm all the time, I've had enough of your stupidity, I've REALLY had enough of being treated as an object, so what guys are you fucking thinking? You think you can call me Jabba as a word that I was always called because I am fucking morbidly obese?
+Wow, just fucking WOW! This is why we can't have nice things! And you know what? I'm out of here. Have fun here in my dusty YouTube channel because I am not coming back.
+ I'm sick and tired of you going around like a fucking bee swarm all the time, I've had enough of your stupidity, I've REALLY had enough of being treated as an object, 
+ so what guys are you fucking thinking? You think you can call me Jabba as a word that I was always called because I am fucking morbidly obese?
 
-You shouldn't behave this way, I tried to teach you a lesson and NOW THIS?! What the fuck is wrong with you? This is why you bronies who hate me for harassing the most successful YouTubers in the world, you can say that I am cancelled or approved, that's what the CEO of Twitter decides. Why can't you behave like a normal person when I told you not to do it?
+You shouldn't behave this way, I tried to teach you a lesson and NOW THIS?! What the fuck is wrong with you? This is why you bronies who hate me for harassing the most
+ successful YouTubers in the world, you can say that I am cancelled or approved, that's what the CEO of Twitter decides. Why can't you behave like a normal person when 
+ I told you not to do it?
 
-You really have to shake your heads and drop it, you ambassadors. I am only a person on the internet who likes to do stuff, but racism and swearing is my passion and I feel like doing it to ruin people's reputations. I ruined three people's reputations as well (SgtPepperArc360, Karonzilla and Saturned05/Joopter) and they never came back how I threw Samsung refrigerators at them. This isn't a crashout, this is a goodbye message.
+You really have to shake your heads and drop it, you ambassadors. I am only a person on the internet who likes to do stuff, but racism and swearing is my passion and I
+feel like doing it to ruin people's reputations. I ruined three people's reputations as well (SgtPepperArc360, Karonzilla and Saturned05/Joopter) and they never came
+ back how I threw Samsung refrigerators at them. This isn't a crashout, this is a goodbye message.
 
 I feel like I don't want to interact with Elliott Enantiornithine anymore, the way he treated one of them like that and I am cutting ties with him, PERMANENTLY. You heard that? I am genuinely cutting ties with him. He is not going to get another chance from his fucking head.
 
-Elliott (a.k.a. Brandon Bratol), if you're watching this post, I'm sorry, but I have to cut ties with you because you are using it as a hidden weapon to attack someone and manipulate them. DO YOU THINK THIS IS A GOOD IDEA TO HARASS THE INNOCENT PEOPLE LIKE THAT, HUH?! WHY ARE YOU GOING AROUND LIKE A SQUIRREL CHEWING ACORN TRYING TO BLAME THE ALLEGATIONS OUT OF INNOCENT PEOPLE?! This is not how you attack James in every way, shape or form, you may misheard his commands and you did it for yourself. DO YOU HEAR ME?! That's it. We're fucking done for good. We're done. Goodbye forever. This is not an excuse for you to do that. You can send death threats all you want, whenever you want, because you will always remain stupid, toxic and incinerated, and finally, you will always be a predator for your whole life after what you did on November 30th, 2025. You are a pedophile. You are nothing but a manipulative piece of shit trying to debunk the allegations out of someone that they didn't. How about you go get a fucking job and focus on something useful with your life instead of harassing people like a fucking jackass? No one wants to be your friend, you made them disgusted and felt like you are one of the individual problematic people on the internet. If I were you, I hope you will be exposed to the news. I don't even know what AU's are for you and I do not want to hear it. End of story.
+Elliott (a.k.a. Brandon Bratol), if you're watching this post, I'm sorry, but I have to cut ties with you because you are using it as a hidden weapon to 
+attack someone and manipulate them. DO YOU THINK THIS IS A GOOD IDEA TO HARASS THE INNOCENT PEOPLE LIKE THAT, HUH?! WHY ARE YOU GOING AROUND LIKE A SQUIRREL 
+CHEWING ACORN TRYING TO BLAME THE ALLEGATIONS OUT OF INNOCENT PEOPLE?!
+ This is not how you attack James in every way, shape or form, you may misheard his commands and you did it for yourself.
+ DO YOU HEAR ME?! That's it. We're fucking done for good. We're done. Goodbye forever. This is not an excuse for you to do that.
+ You can send death threats all you want, whenever you want, because you will always remain stupid, toxic and incinerated, and finally, 
+ you will always be a predator for your whole life after what you did on November 30th, 2025. You are a pedophile. You are nothing
+ but a manipulative piece of shit trying to debunk the allegations out of someone that they didn't. How about you go get a fucking
+ job and focus on something useful with your life instead of harassing people like a fucking jackass? No one wants to be your friend,
+ you made them disgusted and felt like you are one of the individual problematic people on the internet. If I were you, I hope you will 
+ be exposed to the news. I don't even know what AU's are for you and I do not want to hear it. End of story.
 If you try to come back after my break is over, I will block you, mass report you and report you to the police. I will never accept your apology for things you have done and always will be. You will be in jail and you will deserve how you acted stupid for years prior.
 
 If things don't change, you can hate me all you want. That's how your behavior is. Nobody cares if your behavior is too rough, then go away and never come back. Go somewhere else to communicate and develop. If not, grab a sharp knife and keys. I hope you go to hell for things you have done to me.
@@ -62,7 +78,24 @@ From now on, My Little Pony Sora AI Series is now cancelled and there will be no
 I want everyone to be happy. I want to go back to 2015, the year that has no drama. I hope everyone will befriend me, make me successful by telling some large YouTubers, not spitefulness. Goodbye.
 `,
 `
-ItzUltraScout's era is coming to end. All of my career that I used to work on are gone forever due to my parents forced me to delete my main YouTube channel because of my face and my actual information being posted in public that I used to introduce myself, and I need to remove them all such as old YouTube channels I owned, had to be privated. Some websites, for example Fandom, a random subdomain of the wiki has my information about me when I was stupid back then and I can't completely remove them because of the automated filter said that I am vandalizing the article, tried to make it blank and it's very limited. How pathetic. Can't you people can be smart for fuck's sakes? Get yourselves a life you little bastards, you know that thing and please how in early days of Fandom has changed hereafter. I swear to god, will you ever remove my article entirely otherwise my mom's sister will have to see my article under my deadname on the wiki, read it again and tell me that I didn't remove it until the end of the year? My information under this article is a serious concern and you will have to remove this bullshit or else I will send the goddamn government papers against you to sue your wiki! Would you get me in trouble for not doing that? I would call the police upon you and he will tell me where you live (if you live under the sea with stupid rocks, seahorse, kelps, jellyfish and corals, I can prove you live in the aquarium and the rest of the police can still see what you are doing) which I can almost send a mysterious pizza with sweet gunpowder where the delivery boy can deliver you, would it be a big problem for all of that? Then do it already and also learn what handling criticism technique works. In fact, I just found you doing things that you don't really care about removing a single article if the wiki is not a rocket science when it was requested by user for privacy reasons. Do you know what privacy reasons mean? It's the same thing as doxxing because you don't fucking know how to speak proper English because I think you are Scottish coward who twists your tongue or something shit you took from. Please learn how doxxing word means and why you should avoid that, and please learn how to complete remove the article from the wiki. It's pretty simple. I DID ACTUALLY REQUEST YOU TO REMOVE MY ARTICLE BUT YOU DIDN'T. For your mistakes, I am 18 year old man and I want my real name to be removed or else I will report you to the authorities to pay you a fine for refusal. So remember that guys!
+ItzUltraScout's era is coming to end. All of my career that I used to work on are gone forever due to my parents forced me to delete my main 
+YouTube channel because of my face and my actual information being posted in public that I used to introduce myself, and I need to remove them all 
+such as old YouTube channels I owned, had to be privated. Some websites, for example Fandom, a random subdomain of the wiki has my information about 
+me when I was stupid back then and I can't completely remove them because of the automated filter said that I am vandalizing the article, tried to
+ make it blank and it's very limited. How pathetic. Can't you people can be smart for fuck's sakes? Get yourselves a life you little bastards, you 
+ know that thing and please how in early days of Fandom has changed hereafter. 
+I swear to god, will you ever remove my article entirely otherwise my mom's sister will have to see my article under my deadname on the wiki,
+ read it again and tell me that I didn't remove it until the end of the year? My information under this article is a serious concern and you will
+ have to remove this bullshit or else I will send the goddamn government papers against you to sue your wiki! Would you get me in trouble for not 
+ doing that? I would call the police upon you and he will tell me where you live (if you live under the sea with stupid rocks, seahorse, kelps, 
+ jellyfish and corals, I can prove you live in the aquarium and the rest of the police can still see what you are doing) which I can almost send
+ a mysterious pizza with sweet gunpowder where the delivery boy can deliver you, would it be a big problem for all of that? Then do it already 
+ and also learn what handling criticism technique works. In fact, I just found you doing things that you don't really care about removing a
+ single article if the wiki is not a rocket science when it was requested by user for privacy reasons. Do you know what privacy reasons mean?
+ It's the same thing as doxxing because you don't fucking know how to speak proper English because I think you are Scottish coward who twists
+ your tongue or something shit you took from. Please learn how doxxing word means and why you should avoid that, and please learn how to complete
+ remove the article from the wiki. It's pretty simple. I DID ACTUALLY REQUEST YOU TO REMOVE MY ARTICLE BUT YOU DIDN'T. For your mistakes, I am 18
+ year old man and I want my real name to be removed or else I will report you to the authorities to pay you a fine for refusal. So remember that guys!
 
 In early days of December 2024, I posted the link of my website on my community tab, admitting my wrongdoings and refrain from doing that again. My parents did the same thing as they wanted me to stop being a YouTuber for all the time and forced me to become a casual person doing casual things in reality such as gaming, watching movies, doing good things instead of doing the same thing that contains my face and ridiculing me.
 
@@ -99,10 +132,17 @@ TO PORT FORWARD BONZIWORLD, C'MON, YOU LITHIE BITCH! I'LL JUST GOING TO ATTACK Y
 You're going to be pathetic, go get a life, GET A LIFE right now!
 `,
 `
-I can't take it anymore, you must are psychologic and you will ever think at me, huh? What are you going to do this for me? An vacation or something? So stay here and get your butt for your punishment. Stay up, and don't wanna to be friends, when you level up to criticize everyone, and just get higher and higher, so get a some racist words, bitch! And you will rather to say the N-word to me? You are not black, you are white.
+I can't take it anymore, you must are psychologic and you will ever think at me, huh? What are you going to do this for me? 
+An vacation or something? So stay here and get your butt for your punishment. Stay up, and don't wanna to be friends,
+ when you level up to criticize everyone, and just get higher and higher, so get a some racist words, bitch! And you 
+ will rather to say the N-word to me? You are not black, you are white.
 `,
 `
-What location that you hate BonziWORLD, did you send into other states on USA? Pulling states is illegal, so irrelevant. You want to be worstest person on BonziWORLD. Kiss your mom was a gay when FBI is coming to raid your house, you're perole, right? Alright, well your siblings are fuckin gay, they don't want you to hate BonziWORLD, so get the pathetic life loser. Buy some drugs, then get sick for drugs, and go to hospital you dumb. Go to heaven while you have ever died. Or I will fight like a karate then I will kick your organs, stomach and brains off.
+What location that you hate BonziWORLD, did you send into other states on USA? Pulling states is illegal, so irrelevant. 
+You want to be worstest person on BonziWORLD. Kiss your mom was a gay when FBI is coming to raid your house, you're perole, 
+right? Alright, well your siblings are fuckin gay, they don't want you to hate BonziWORLD, so get the pathetic life loser.
+ Buy some drugs, then get sick for drugs, and go to hospital you dumb. Go to heaven while you have ever died. Or I will fight
+ like a karate then I will kick your organs, stomach and brains off.
 `,
 ];
 console.log("Jabba.Js is initializing.");
@@ -239,7 +279,6 @@ function Coherence(text, corpus) {
 // runtime = 1;
 function Prediction(string, newData, predictionLength) {
 	let startingPeriod = performance.now()
-	console.log("Prediction generating...");
     let data = [];
     newData.forEach((textPassage, dataIndex) => {
         let sentences = textPassage.split(". ");
@@ -251,7 +290,7 @@ function Prediction(string, newData, predictionLength) {
                     result += ` |output|: ` + sentences[i+1];
                 }
                 if(Math.random() > 0.5) data.push(sentences[i+1] || "");
-                data.push(result);
+                data.push(result.replaceAll("? ",". ").replaceAll("! ",". "));
             }
         } else {
             sentences.forEach(sentence => {data.push(sentence);});
@@ -301,26 +340,38 @@ function Prediction(string, newData, predictionLength) {
     }
 	let time = performance.now() - startingPeriod;
 	time = time.toString().substring(0,4);
-	console.log("Prediction took "+time+" ms.");
-    return `${finalResult.replace(firstString, "").replaceAll("\\n"," ")}`;
+	finalResult = finalResult.replace(firstString, "").replaceAll("\\n"," ");
+	finalResult = finalResult.replaceAll("|input|","");
+	console.log("Prediction '"+finalResult.substring(0,3)+"' took "+time+" ms.");
+    return `${finalResult}`;
 	
 }
 window.messageHistory = [];
+window.memory = [];
 window.Jabba = {
-	respond:(txt,l=5)=>{return Prediction(txt,trainingData,l);},
+	predict:(txt,l=5)=>{return Prediction(txt,trainingData,l);},
 	prompt:(txt)=>{
-		if(window.messageHistory.length > 10)window.messageHistory=[]; //temporary band-aid to prevent jabba from training himself
-		let result = Prediction(txt,[...trainingData,...messageHistory],Math.floor(Math.random()*(5-3))+3);
-		window.messageHistory.push(txt+". "+result.replaceAll("? ",". ").replaceAll("! ",". ").split(". ")[0]);
-		
-		console.log("To Jabba.js: "+txt+"\n ----- \n Jabba.js says: "+result+"\n -----");
+		txt = txt.replaceAll("? ",". ")
+			  .replaceAll("! ",". ")
+			  .replaceAll(", ",". ");
+		if(window.memory.length > 5)window.memory = [];
+		let result = Prediction(txt,[...trainingData,...window.messageHistory,...window.memory],Math.floor(Math.random()*(5-3))+3);
+		window.messageHistory.push(txt);
+		window.memory.push(
+			result.replaceAll("? ",". ")
+			  .replaceAll("! ",". ")
+			  .replaceAll(", ",". ")
+		);
+		return result;
 	}
 }
-window.Jabba.prompt("hello there danielius i need the  l33t js floodings");
+
 })();
+console.log(window.Jabba.prompt("hello there danielius. please send the whereabouts of the hacker named javascript."));
 /*
 
-	jabba.js 1.2 made by jy
+	jabba.js 1.3 made by jy
 
 */
+
 

@@ -356,13 +356,13 @@ window.messageHistory = [];
 window.memory = [];
 window.Jabba = {
 	predict:(txt,l=5)=>{
+		return Prediction(txt,trainingData,l);
+	},
+	prompt:(txt)=>{
 		Object.keys(associations).forEach(target => {
 			let replacement = associations[target];
 			txt = txt.replaceAll(target,replacement);
 		});
-		return Prediction(txt,trainingData,l);
-	},
-	prompt:(txt)=>{
 		txt = txt.replaceAll("? ",". ")
 			  .replaceAll("! ",". ")
 			  .replaceAll(", ",". ");
@@ -385,6 +385,7 @@ console.log(window.Jabba.prompt("hello there danielius. please send the whereabo
 	jabba.js 1.3 made by jy
 
 */
+
 
 
 

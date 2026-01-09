@@ -315,7 +315,7 @@ function Prediction(string, newData, predictionLength) {
                 (Similarity(newString, dataString[0]) * importanceMap.s)
                 + 
                 (Coherence(newString + " " + dataStringResult, newData) * importanceMap.c);
-            if(!badNgramz.some(r => dataStringResult.includes(r))) {
+            if(!badNgramz.some(r => dataStringResult.toLowerCase().includes(r.toLowerCase()))) {
                 scores.push({
                     score: newScore,
                     content: dataStringResult
@@ -373,5 +373,6 @@ console.log(window.Jabba.prompt("hello there danielius. please send the whereabo
 	jabba.js 1.3 made by jy
 
 */
+
 
 

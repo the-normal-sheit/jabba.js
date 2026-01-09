@@ -146,6 +146,12 @@ right? Alright, well your siblings are fuckin gay, they don't want you to hate B
 `,
 ];
 console.log("Jabba.Js is initializing.");
+let associations = {
+	"you":"me",
+	"my":"his",
+	"I":"he",
+	"i":"he"
+};
 function Similarity(a, b) {
   if (a === b) return 1;
   if (a.length === 0 || b.length === 0) return 0;
@@ -349,7 +355,13 @@ function Prediction(string, newData, predictionLength) {
 window.messageHistory = [];
 window.memory = [];
 window.Jabba = {
-	predict:(txt,l=5)=>{return Prediction(txt,trainingData,l);},
+	predict:(txt,l=5)=>{
+		Object.keys(associations).forEach(target => {
+			let replacement = associations[target];
+			txt = txt.replaceAll(target,replacement);
+		});
+		return Prediction(txt,trainingData,l);
+	},
 	prompt:(txt)=>{
 		txt = txt.replaceAll("? ",". ")
 			  .replaceAll("! ",". ")
@@ -373,6 +385,7 @@ console.log(window.Jabba.prompt("hello there danielius. please send the whereabo
 	jabba.js 1.3 made by jy
 
 */
+
 
 
 

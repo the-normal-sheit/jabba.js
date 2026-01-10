@@ -1,6 +1,6 @@
 /*
 
-	jabba.js 1.3 made by jy
+	jabba.js 1.4 made by jy
 
 */
 'use strict';
@@ -321,7 +321,7 @@ function Prediction(string, newData, predictionLength) {
                 (Similarity(newString, dataString[0]) * importanceMap.s)
                 + 
                 (Coherence(newString + " " + dataStringResult, newData) * importanceMap.c);
-            if(!badNgramz.some(r => dataStringResult.toLowerCase().includes(r.toLowerCase()))) {
+            if(!badNgramz.some(r => dataStringResult.toLowerCase().includes(r.toLowerCase()) || r.toLowerCase().includes(dataStringResult.toLowerCase()) ) ) {
                 scores.push({
                     score: newScore,
                     content: dataStringResult
@@ -340,6 +340,7 @@ function Prediction(string, newData, predictionLength) {
     for(let i = 0; i < predictionLength; i++) {
         let contextString = (pastPhrases.length >= 2 ? pastPhrases[pastPhrases.length-2] : "") + pastPhrases[pastPhrases.length-1];
         let nextPiece = nextPhrase(contextString, 10, pastPhrases);
+		console.log(nextPiece);
         let deadPhrase = nextPiece + Punctuation(nextPiece) + ` `;
         pastPhrases.push(nextPiece);
         finalResult += deadPhrase;
@@ -359,14 +360,14 @@ window.Jabba = {
 		return Prediction(txt,trainingData,l);
 	},
 	prompt:(txt)=>{
-		Object.keys(associations).forEach(target => {
+		/*Object.keys(associations).forEach(target => {
 			let replacement = associations[target];
-			txt = txt.replaceAll(target,replacement);
-		});
+			txt = txt.replaceAll(" "+target+" "," "+replacement+" ");
+		});*/
 		txt = txt.replaceAll("? ",". ")
 			  .replaceAll("! ",". ")
 			  .replaceAll(", ",". ");
-		if(window.memory.length > 5)window.memory = [];
+		if(window.memory.length > 3)window.memory = [];
 		let result = Prediction(txt,[...trainingData,...window.messageHistory,...window.memory],Math.floor(Math.random()*(5-3))+3);
 		window.messageHistory.push(txt);
 		window.memory.push(
@@ -375,17 +376,17 @@ window.Jabba = {
 			  .replaceAll(", ",". ")
 		);
 		return result;
-	}
+	},
+	
 }
 
 })();
 console.log(window.Jabba.prompt("hello there danielius. please send the whereabouts of the hacker named javascript."));
 /*
 
-	jabba.js 1.3 made by jy
+	jabba.js 1.4 made by jy
 
 */
-
 
 
 

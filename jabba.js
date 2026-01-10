@@ -1,11 +1,21 @@
 /*
+------>>
+    --------->>
+	
+    [][]        [][][][]        [][][][][]      [][][][][]          [][][][]
+    [][]      [][][][][][]      [][]    [][]    [][]    [][]      [][][][][][]             ___   __
+    [][]    [][][]    [][][]    [][][][]        [][][][]        [][][]    [][][]	 _      |   /
+  [][][]    [][][][][][][][]    [][]    [][]    [][]    [][]    [][][][][][][][]    / \     |   \__
+[][][]      [][]        [][]    [][][][][]      [][][][][]      [][]        [][]	\_/   _ /   __/
 
-	jabba.js 1.4 made by jy
+{  Ver. 1.5  }
 
-*/
+    --------->>
+------>>
+*/ 
 'use strict';
 (() => {
-let trainingData = [
+let trainingData =[
 `
 You know what? I admitted it. I'm done with you all. These haters won't leave me alone and you guys are next to harass me for harassing the most subscribed Brony fan "James" that we wrongly targeted. They ruined my entire career due to their clueless drama. They never accepted my apology like little midgets.
 
@@ -145,7 +155,7 @@ right? Alright, well your siblings are fuckin gay, they don't want you to hate B
  like a karate then I will kick your organs, stomach and brains off.
 `,
 ];
-console.log("Jabba.Js is initializing.");
+console.log('initializing');
 let associations = {
 	"you":"me",
 	"my":"his",
@@ -266,7 +276,6 @@ function Coherence(text, corpus) {
     score += (trigramMatches / (words.length - 2)) * 20;
     weights += 20;
   }
-  //trigrams are good enough
   
   let avgSentenceLength = words.length / sentences.length;
   let sentenceLengthScore = Math.max(0, 100 - Math.abs(avgSentenceLength - 15) * 4);
@@ -282,10 +291,12 @@ function Coherence(text, corpus) {
   
   return Math.round((score / weights) * 100)/100;
 }
-// runtime = 1;
+
 function Prediction(string, newData, predictionLength) {
 	let startingPeriod = performance.now()
     let data = [];
+    let wordPairs = [];
+    
     newData.forEach((textPassage, dataIndex) => {
         let sentences = textPassage.split(". ");
         if(sentences.length > 1) {
@@ -301,10 +312,64 @@ function Prediction(string, newData, predictionLength) {
         } else {
             sentences.forEach(sentence => {data.push(sentence);});
         }
+        
+        let passageWords = textPassage.toLowerCase().match(/\b\w+\b/g) || [];
+        for(let i = 0; i < passageWords.length - 1; i++) {
+            wordPairs.push({
+                context: passageWords.slice(Math.max(0, i - 2), i).join(' '),
+                word: passageWords[i],
+                next: passageWords[i + 1]
+            });
+        }
     });
-    //console.log(data);
+    
+    let nextWord = (context, currentPhrase, variety=8) => {
+        let scores = [];
+        let contextWords = context.toLowerCase().match(/\b\w+\b/g) || [];
+        let lastWord = contextWords[contextWords.length - 1] || '';
+        let lastTwoWords = contextWords.slice(-2).join(' ');
+        
+        for(let pair of wordPairs) {
+            let score = 0;
+            
+            if(pair.word === lastWord) score += 2.5;
+            if(pair.context.includes(lastWord)) score += 1.2;
+            if(pair.context === lastTwoWords) score += 1.8;
+            
+            let phraseWords = currentPhrase.toLowerCase().match(/\b\w+\b/g) || [];
+            if(phraseWords.includes(pair.next)) score *= 0.4;
+            
+            if(score > 0) {
+                scores.push({
+                    score: score + Math.random() * 0.3,
+                    word: pair.next
+                });
+            }
+        }
+        
+        if(scores.length === 0) {
+            return wordPairs[Math.floor(Math.random() * wordPairs.length)].next;
+        }
+        
+        scores = scores.toSorted((a,b) => b.score - a.score).slice(0, variety);
+        return scores[Math.floor(Math.random() * scores.length)].word;
+    }
     
     let nextPhrase = (newString, variety=5, badNgramz=['shietzmane']) => {
+        let wordBuildMode = Math.random() > 0.4;
+        
+        if(wordBuildMode) {
+            let builtPhrase = '';
+            let targetLength = Math.floor(Math.random() * 7) + 3;
+            
+            for(let i = 0; i < targetLength; i++) {
+                let word = nextWord(newString + ' ' + builtPhrase, builtPhrase);
+                builtPhrase += (builtPhrase ? ' ' : '') + word;
+            }
+            
+            return builtPhrase;
+        }
+        
         let importanceMap = {s:0.5, c:1.3}
         let result = '';
         let scores = [];
@@ -360,10 +425,6 @@ window.Jabba = {
 		return Prediction(txt,trainingData,l);
 	},
 	prompt:(txt)=>{
-		/*Object.keys(associations).forEach(target => {
-			let replacement = associations[target];
-			txt = txt.replaceAll(" "+target+" "," "+replacement+" ");
-		});*/
 		txt = txt.replaceAll("? ",". ")
 			  .replaceAll("! ",". ")
 			  .replaceAll(", ",". ");
@@ -383,11 +444,17 @@ window.Jabba = {
 })();
 console.log(window.Jabba.prompt("hello there danielius. please send the whereabouts of the hacker named javascript."));
 /*
+------>>
+    --------->>
+	
+    [][]        [][][][]        [][][][][]      [][][][][]          [][][][]
+    [][]      [][][][][][]      [][]    [][]    [][]    [][]      [][][][][][]             ___   __
+    [][]    [][][]    [][][]    [][][][]        [][][][]        [][][]    [][][]	 _      |   /
+  [][][]    [][][][][][][][]    [][]    [][]    [][]    [][]    [][][][][][][][]    / \     |   \__
+[][][]      [][]        [][]    [][][][][]      [][][][][]      [][]        [][]	\_/   _ /   __/
 
-	jabba.js 1.4 made by jy
+{  Ver. 1.5  }
 
-*/
-
-
-
-
+    --------->>
+------>>
+*/ 

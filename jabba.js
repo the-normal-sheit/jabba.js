@@ -201,6 +201,143 @@ You want to be worstest person on BonziWORLD. Kiss your mom was a gay when FBI i
 right? Alright, well your siblings are fuckin gay, they don't want you to hate BonziWORLD, so get the pathetic life loser.
  Buy some drugs, then get sick for drugs, and go to hospital you dumb. Go to heaven while you have ever died. Or I will fight
  like a karate then I will kick your organs, stomach and brains off.
+`,
+`
+Everything. I finished. You guys are hooligans, pedos, monsters, dragons and hippos. I was allowed to see what happened on 
+the server today? Those people who accept and receive a new hotel and hunt for that IP address if the hotel has a new IP 
+address. Do I need to leave again? See, Seamusmario is no longer hypocritical, nor is Seamusmario striving to be a better
+ person. Seamusmario has a new channel because I revealed its IP address, and now Seamusmario will not broadcast live 
+ unless personalization is enabled. What a penis you guys constantly know and barricade for no reason. I hope your 
+ parents will annoy you and make you angry. Because we no longer use BonziWORLD. Because it’s very stupid. GoAnimate 
+ people who don't like the associated Bonkeyword because it can grab an IP address. I want to get those gofag IP addresses
+ later. I want to make people run away as usual. And the last thing. If I close all of BonziWORLD, you will still call me 
+ jabba, a? If I delete an incompatible account? To me, it’s still called the word jabba, and you know you immediately came
+ up with what word? You despise a little. Look at what I said, David Egan shows the index point that if Miguel de Oliveria 
+ Valentine will be discontinued? Miguel must be on a good list, David Egan - naughty for life. What if I delete my Google
+ Account and change my trademark if I still call it jabba with disagreements? You knew everything. I don’t care if my IP 
+ address was made public, who cares that it just stays there and does nothing! Now I hate Sexy Wubbox because Diogo Mendes,
+ who bombed the chat site port, doesn’t allow my internet to die at speed and speed. Who cares, just call me jabba, how do
+ you like it, right? We have your IP address because the ports have been registered. The first magazine, Thonkbot IP, was 
+ shown when monsters suddenly closed the tab while visiting the site. not bad means the ip address was shown as new. vyond 
+ likes to block and offend the firewall. and the omle as well. i’ll play gba and leave again because you all hooligans dancing
+ like chimpanzees have to be locked up at the zoo! these blocked sites suffer like anger! it is suspicious that we are 
+ seamusmario's partners again, because he has improved and wants to act again when mature, if not ... bonzio a similar
+ world in a world where i would not see activity. this work affects persons and ducks, and what are the main threats! 
+ these people close close, hard to say you offer either gtfo or ddos! these people must move frequently! just go and you’re 
+ all black. i don't have uiggu! if i see a word called jabba again? i will put a bead out of you, and you can deserve 
+ to be driven out! rant users are good, but you rely on 300 dillecillion eon! now go to your room and tell your parents 
+ what you just did before! go now! the foxfan computer for managing and setting up system32 will be permanently deleted!
+`,
+`
+After the jail. This is your cell, and you will be staying 50 years in jail because you are pedophile and banning him a
+ user with for unknownigly abuse! You have visitors to talk you! Goodbye. Police, i am sorry what I did! Please sorry
+ and my rebeillion is over at the same time gets me disgusted and explained me how did you know me. That you will execute
+ me? All families start mading to Nathan Thompson. Oh! Oh! Oh! Oh! Oh! Oh, Oh, Oh, Oh, Oh, Oh, Oh, ooooooooooooooooooooooooooooooooo
+ oh oh oh oh oh oh oh oh oh oh oh oh oh oh oh Grrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr! Nathan Thompson!
+ What in the world is wrong with you, we can't believe you banned onute with IP on Cloudflare then they called you, you are
+ fraud person and being a criminal stock of pedophile! How dare you! How dare you ban onute on BonziWORLD! Now the complaint
+ with police has deleted your website and your Cloudflare account has been suspended for terms of service! This is, by far,
+ the worst thing you ever done! Now we have impossible amount to recover the ban because of you! We leave him for my wife
+ in the house! I can't freaking believe you did this! You are grounded grounded grounded grounded grounded grounded grounded
+ grounded grounded grounded grounded grounded grounded grounded for five hundred sixty two millnillion forevers until you will
+ die and the cloudflare will die in future year! Now sleep in the bed forever right now and you are depreciated person in the 
+ crimiest world, then I have to some day I call police to execute you! Sleep forever until you will die! Go to hell while you 
+ are dead! You're being an dead meat in this rumor! You demand disrespect! You niggers smack on the floor and die! 
+ WAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA! And stop crying like
+ a crybaby! We are not friends! WAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA. After the execution day. Come on, Nathan Thompson! This is a 
+ execution time! Never! I will not going to prove my things off I was being executed! I don't freaking care! Things that you are
+ going to, I will try to push you if you don't go to the most of rightful things for murdering and like jigsaw movie that you
+ will crushed by spikier blender! Any last words, Nathan Thompson? Yes, I promise, I will never to do this proving things I will
+ never ever ever to do this! Please accept and attempt my session! Sorry to me? Your apology is unacceptable, because you are 
+ being annoying and a pedophile! Now this is execution time for final! Wa Wa Wa Wa Wa Wa Wa La Wa La Wa La Wa La Wa La Wa La Wa
+ La walawalawalawalawalawalawalawalawalawalawalawalamamamamammanamanamanmanamanamanamanmanamanamanamananananana!
+ Wakakakakakakakakakakakakakakagagagagagagagagagagagagagagagagagagagaga! Nathan Thompson was ripped, 1977-2020, November 2nd.
+ The breaking news! Nathan Thompson was died, for banning Onute's IP and making fraud abuse! She was executed by police officer!
+ Please try it to congratulate. Yay! Nathan Thompson was died due to ban of onute! Yes! Yes! Yes! Yes! The good reason! Yes! 
+ Yes! We are lucky so much! Outro: Please sure to subscribe and like. Don't forget to write the comments section! So guys, did 
+ you want to another video? Request me! Thanks for watching! Bye bye! Video Ended.
+`,
+`
+ICS, I can't believe you insulted my BonziWORLD site, that's it, you are a kiddie forever. Take that tho. But I will excessively 
+ban you from BonziWORLD, you iceberg! He is a downhill for a moment now. What the kike that you came from? Are you such of a
+ devil for the hatred of BonziWORLD? We're supposed to be friends, but no, you did this to me right now. Okay, ICS was a serious
+ pedophile and a kiddie right now. So you know that? Well, actually for a moment of December in somedays has having to hate me 
+ for not shutting down my BonziWORLD site. Also, did you know he hates BonziWORLD, he is super insane like me. I am so insaneous
+ that you have been ever did, I have grounded for a some times and you wouldn't stop already to hate me, or I will ground you 
+ for more times, so go to your rooms now. Now look what should you ever did, you have a final warning. After the final warning,
+ you would be banned from BonziWORLD for your short time, and giving you the strike for permanent ban, that means you won't 
+ raid my server again, you can DDOS me and it will not work. If you use VPN, I will simultaneous ban you for a minute. I still 
+ know your IP address, I know you logged on my BonziWORLD Revived site when you ever visit, do not visit like that. Perhaps, you
+ will going to fun of me. Engage me, I have no other words to say, so shut the fuck up and get out of my life of my repetition.
+ You don't have a implementation to say it, but I don't care what are you saying is really bad. You have no idea what the terrible
+ grammar and deleted my article "ICS" on BonziWORLD fandom. I will re-add the page into a BonziWORLD FE wiki, that you will be 
+ deserved, you'd all mean is you can't DDOS me, I won't give up to remove the page and don't you dare to give a "ransomware" on my
+ laptop. Otherwise I will buy the new laptop is such a gaming neon rainbow keyboard or I reinstall Windows on my laptop, besides,
+ I will turn off WiFi and you can't sneak around on it. Because for the COVID-19, you may get arrested for an small amount for
+ dollars. Onute doesn't get hated and deserved to shut down BonziWORLD. You know what, that's all of the revenge. I have a revenge
+ with you, I wish you will be evicited back, because you uploaded the video out of me called "MSAgent Shorts". I usually hate
+ Microsoft Agent, because it's too buggy and like a crap talking adult male Sindey. I can't take it anymore, you must are psychologic
+ and you will ever think at me, huh? What are you going to do this for me? An vacation or something? So stay here and get your
+ butt for your punishment. Stay up, and don't wanna to be friends, when you level up to criticize everyone, and just get higher and
+ higher, so get a some racist words, bitch! And you will rather to say the N-word to me? You are not black, you are white. Well,
+ that we're actually psychopathics within Nathan Thompson. You know that BagelChip hates you, of course because you hate BonziWORLD.
+' Final chance and no more. But you wanna to be friends, first you need to salute and apologize BonziWORLD then so I can be friends 
+with other users. If you don't salute and apologize BonziWORLD, then you don't wanna be friends, I don't think about to expose your 
+Internet service provider and your location, I know that you are located in Ohio. I found your location on your Steam, sadly I don't
+ have Steam account aside. That means your people is trying to kill you. Are the thing is a job for fighting people? You may gotten 
+ this, get arrested. What location that you hate BonziWORLD, did you send into other states on USA? Pulling states is illegal, so
+ irrelevant. You want to be worstest person on BonziWORLD. Kiss your mom was a gay when FBI is coming to raid your house, you're perole, 
+ right? Alright, well your siblings are fuckin gay, they don't want you to hate BonziWORLD, so get the pathetic life loser. 
+ Buy some drugs, then get sick for drugs, and go to hospital you dumb. Go to heaven while you have ever died. 
+ Or I will fight like a karate then I will kick your organs, stomach and brains off. If your computer and your
+ IP address is Armstrong Cable, then we can give them access to your computer, to steal your files on my main 
+ laptop. And guess, your files were going to be permanent moved for my one is such the best. BESIDES, YOU ARE 
+ UNEARTHED, AND YOUR APOLOGY WILL NOT BE ACCEPTED. YOU BROKE BONZIWORLD COMMUNITY, NOW APOLOGIZE! Or we will 
+ continue the fun of you, making GoFags to fun of you. And also, Loskythecopydog77 exposed your face in several 
+ years ago. That's you forget this. You are disqualified. You need to inadequate and complaint my decisions so I
+ wish to accept your hatred community. Have a nice day!
+`,
+`
+I met you for three years in 2020 for what you have called "BOT Trump", then be neutral with me 
+for attacking this 14-year-old Kazakhstan kid and now this? kern3l, I'm sick and tired of you going anywhere because you are completely
+ honest person who always sits in the computer and play Roblox with your friends on "Nothingness but better" experience. All you have
+ to do is criticize me saying "MUH JABBA BUH-BYE YOU FRICKING HIDEOUS OBESE", huh?! YOU DO NOT BE RUDE WHILE I AM YOUR FRIEND BUT YOU
+ BETRAYED ME LIKE THAT, SO WHAT'S THE MATTER? YOU ARE RUDE TO OTHERS LIKE PANZER, BLUZU, MY WARSAW FRIENDS BECAUSE I LOST INTEREST OF
+ YOUR FUCKING COMMUNITY. You haven't helped me in early 2020 because you think that I am jealous to you when you call me that shit in
+ the past? And you own Counter Strike knifes? Are you losing your marbles man? False accusations and excuses are no matter because 
+ you think you're always lying that you are friends with me by doing nothing at all, then you hide something where I said something
+ trash to you in early days of golden era? Is this what you really wanted to do is insult me in morbid state? You did almost
+ everything like THOUSANDS of times and you have not learned my lesson already. WHY NOT GET A FUCKING JOB INSTEAD OF SITTING IN THE
+ COMPUTER ALL DAY?! YOU ARE FUCKING 17 YEARS OLD. ACT YOUR FUCKING AGE INSTEAD OF GETTING ADDICTED TO TECHNOLOGY AND STOP HARASSING
+ MY FRIENDS THAT YOU USUALLY HATE AND MAKE FUN OF THEM. IF SO, THEN YOU PLAY ROBLOX FOR FULL HOUR, THEN YOU SOMEWHERE GET A BULLSHIT
+ SNACK, THEN YOU MAKE FUN OF YOURLOCALMOON FOR NO REASON AND THEN LATER YOU SAY THIS SHIT TOWARDS ME LIKE THAT?! ...We're fucking
+ done. I am not kidding, I am fucking SERIOUS. I am fucking done with you, Deniel. Go homeless you piece of crap, you fucking troglodyte.
+ Go throw 400 quattuordecillion bottles at me when you act shit like this and I will expose you to Google Docs for the rest of your life. We're done.
+
+You know what I've decided? I am no longer part of this community. KerneggWORLD community sucks ass. Just imagine if everyone likes me by 
+defending me for recording webcam videos in there from social streaming platform, but now this? Freaking look, I met this dude on Discord 
+for three years in mid-2020 like it was actually named "BOT Trump" and he was from my own Discord server after it got destroyed. I banned
+ kern3l from my own Discord server and I am genuinely true, really true, no strings attached and this is a real part of his message 
+ saying on group DM "Bye you fucking hideous Jabba", yeah, that's actually you motherfucker. Stop fucking lying. Your fakes are fucking 
+ terrible. You use improper English when you can't fucking speak normally, you turd. Stop being rude to me like that and I don't wanna hear
+ a single word from you. And guess what, Goku - the father, and the rest of friends of DBS have rated your Roblox experience: 0/10, you
+ Papa Louie character who has bad orders in every Papa's game to the modern ones like Papa's Mocharia, Papa's Cluckeria and Papa's
+ Paleteria. What am I going to do next? Become ultra instinct? I better be. And what kind of civilization is this? Is the entire barn 
+ where all people meet? This has gone way too far. And why are you still friends with Kazakhstan kid? You better not interact him again,
+ because this is so wrong. Fuck your entire life, fuck your reputation, fuck your childhood, fuck everything. You are fucking unappealing 
+ person. Go fuck yourself and eat a McRib you fucking selfish idiot because NEXT TIME if you act like this over and over then you will deal
+ with your parents and ban you from using these devices for good. You are such a ghoul. Go frick your ass and go fuck yourself you imbecile.
+ I may take your souls now and you can fucking have misery of your entire life.
+`,
+`
+YOU DO! do it yourself for until you David Egan - what a bad! bad means ip of constellations bonziworld. It take JS and paster of generation!
+ so why do you mean that i am the Jabba Saulut! YOU CONTENTER LOVER OF A CALLED DAVID EGAN!!! WHY IT KEEP DOING IT FOR IT? so you are the noger
+ that protegent ass! kiss me jabba call me onute the IUS! Why is ICS ban me, is she pitch black muslim! UNBAND ME FROM A BONZIWORD? NOW!!!!!
+ WHAT A FUCKER! I CAN DDOS WITH STRESSTHEM LOIC NET SO YOU CAN DDOSER OF DOXER OF IP ISP ROUTER! YOU ARE HAVE A GROUNDED FOR UNTIL 
+ 365687325663587265287567568765289238561592365 SUPERFUCKODICKING DUOTRIOQUATTEROBILLIMILLION ERAPLEXERFUCKERILITIES UNTIL YOU DO A WORKER SLAVE IS!! ENTER T.I. ROOM OR I APPLE PEAR AT YOU YOU BREAD ASS!!!!!!!!!!!!!!!!!!!!!!
+I'm is Jabba Saulute. You got hacked by Samsung Fun Club. Uh oh, what a hooligan. You are such a dragon. Penis are shall not pass. 
+You are so so so grounded for 9999 decillion chrinchubillion trigonomintillion omega ultra super hyper mega tranquilities. I will LOIC
+ now your ip address right of now.
 `
 ];
 console.log('initializing');
@@ -556,7 +693,6 @@ function Prediction(string, newData, predictionLength) {
     for(let i = 0; i < predictionLength; i++) {
         let contextString = (pastPhrases.length >= 2 ? pastPhrases[pastPhrases.length-2] : "") + pastPhrases[pastPhrases.length-1];
         let nextPiece = nextPhrase(contextString, 10, pastPhrases);
-		console.log(nextPiece);
         let deadPhrase = nextPiece.substring(0,1).toUpperCase()+nextPiece.substring(1) + Punctuation(nextPiece) + ` `;
         pastPhrases.push(nextPiece);
         finalResult += deadPhrase;

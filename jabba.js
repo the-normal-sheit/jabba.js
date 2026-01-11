@@ -14,11 +14,7 @@
 ------>>
 */ 
 'use strict';
-window.config = {
-	variety:1,
-	length:5,
-	plagarism:1,
-};
+window.config = {variety: 0.25, length: 10, plagarism: 1};
 
 (() => {
 let trainingData =[

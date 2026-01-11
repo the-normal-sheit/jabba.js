@@ -8,14 +8,66 @@
   [][][]    [][][][][][][][]    [][]    [][]    [][]    [][]    [][][][][][][][]    / \     |   \__
 [][][]      [][]        [][]    [][][][][]      [][][][][]      [][]        [][]	\_/   _ /   __/
 
-{  Ver. 1.5  }
+{  Ver. 1.6  }
 
     --------->>
 ------>>
 */ 
 'use strict';
+window.config = {
+	variety:1,
+	length:5,
+	plagarism:1,
+};
+
 (() => {
 let trainingData =[
+`
+Windows XP is a major release of Microsoft's Windows NT operating system.
+ It was released to manufacturing on August 24, 2001, and later to retail
+ on October 25, 2001. It is a direct successor to Windows 2000 for high-end
+ and business users and Windows Me for home users.
+ Development of Windows XP began in the late 1990s under the codename
+ "Neptune", built on the Windows NT kernel and explicitly intended for mainstream 
+ consumer use. An updated version of Windows 2000 was also initially planned for
+ the business market. However, in January 2000, both projects were scrapped in
+ favor of a single OS codenamed "Whistler", which would serve as a single platform
+ for both consumer and business markets. As a result, Windows XP is the first 
+ consumer edition of Windows not based on the Windows 95 kernel or MS-DOS.
+ Upon its release, Windows XP received critical acclaim, 
+ noting increased performance and stability (especially compared to Windows Me),
+ a more intuitive user interface, improved hardware support and expanded multimedia
+ capabilities. Windows XP and Windows Server 2003 were succeeded by Windows
+ Vista and Windows Server 2008, released in 2007 and 2008, respectively.
+ Mainstream support for Windows XP ended on April 14, 2009, and extended 
+ support ended on April 8, 2014. Windows Embedded POSReady 2009, based on Windows
+ XP Professional, received security updates until April 2019. The final security
+ update for Service Pack 3 was released on May 14, 2019. Unofficial methods
+ were made available to apply the updates to other editions of Windows XP. 
+ Microsoft has discouraged this practice, citing compatibility issues.
+`,
+`
+In the late 1990s, initial development of what would become Windows XP was focused 
+on two individual products: "Odyssey", which was reportedly intended to succeed the
+ future Windows 2000 and "Neptune", which was reportedly a consumer-oriented
+ operating system using the Windows NT architecture, succeeding the MS-DOS-based
+ Windows 98. However, the projects proved to be too ambitious. In January 2000,
+ shortly prior to the official release of Windows 2000, technology writer Paul 
+ Thurrott reported that Microsoft had shelved both Neptune and Odyssey in favor
+ of a new product codenamed "Whistler", named after Whistler, British Columbia, 
+ as many Microsoft employees skied at the Whistler-Blackcomb ski resort. The goal 
+ of Whistler was to unify both the consumer and business-oriented Windows lines under
+ a single, Windows NT platform. Thurrott stated that Neptune had become "a black hole
+ when all the features that were cut from Windows Me were simply re-tagged as
+ Neptune features. And since Neptune and Odyssey would be based on the same code-base
+ anyway, it made sense to combine them into a single project".
+
+At PDC on July 13, 2000, Microsoft announced that Whistler would be released during the second half of 2001, and also unveiled the first preview build, 2250, which featured an early implementation of Windows XP's visual styles system and interface changes to Windows Explorer and the Control Panel.
+
+Microsoft released the first public beta build of Whistler, build 2296, on October 31, 2000. Subsequent builds gradually introduced features that users of the release version of Windows XP would recognize, such as Internet Explorer 6.0, the Microsoft Product Activation system, and the Bliss desktop background.
+
+Whistler was officially unveiled during a media event on February 5, 2001, under the name Windows XP, where XP stands for "eXPerience".
+`,
 `
 You know what? I admitted it. I'm done with you all. These haters won't leave me alone and you guys are next to harass me for harassing the most subscribed Brony fan "James" that we wrongly targeted. They ruined my entire career due to their clueless drama. They never accepted my apology like little midgets.
 
@@ -153,7 +205,7 @@ You want to be worstest person on BonziWORLD. Kiss your mom was a gay when FBI i
 right? Alright, well your siblings are fuckin gay, they don't want you to hate BonziWORLD, so get the pathetic life loser.
  Buy some drugs, then get sick for drugs, and go to hospital you dumb. Go to heaven while you have ever died. Or I will fight
  like a karate then I will kick your organs, stomach and brains off.
-`,
+`
 ];
 console.log('initializing');
 let associations = {
@@ -162,6 +214,51 @@ let associations = {
 	"I":"he",
 	"i":"he"
 };
+
+let posPatterns = {
+	noun: /^(system|user|release|version|support|time|year|computer|software|network|server|data|file|program|application|update|security|performance|interface|hardware|business|market|consumer|edition|kernel|platform|service|method|issue|practice|compatibility|development|stability|capability)s?$/i,
+	verb: /^(is|was|were|are|be|been|being|have|has|had|do|does|did|can|could|would|should|will|shall|may|might|release|end|receive|base|build|plan|succeed|discourage|cite|make|provide|serve|intend|note|improve|expand)d?$/i,
+	adj: /^(major|direct|high|business|home|late|mainstream|single|first|critical|intuitive|improved|expanded|extended|final|unofficial|available|other|increased|explicit|updated|initial|consumer|similar|different|new|old|current)$/i,
+	adv: /^(later|explicitly|also|initially|however|especially|respectively|until)$/i,
+	det: /^(the|a|an|this|that|these|those|both|all|some|any|each|every|no)$/i,
+	prep: /^(of|to|in|on|for|with|by|at|from|under|as|over|between|through|during|before|after|since|until|about)$/i,
+	conj: /^(and|or|but|nor|yet|so|for|because|since|unless|although|though|while|if|when|where|whether)$/i,
+	pron: /^(it|its|they|them|their|he|she|him|her|we|us|our|you|your|i|me|my)$/i
+};
+
+function getWordType(word) {
+	word = word.toLowerCase();
+	for(let type in posPatterns) {
+		if(posPatterns[type].test(word)) return type;
+	}
+	return 'unknown';
+}
+
+function grammarScore(word, prevWord, prevPrevWord) {
+	let score = 1.0;
+	let type = getWordType(word);
+	let prevType = prevWord ? getWordType(prevWord) : null;
+	let prevPrevType = prevPrevWord ? getWordType(prevPrevWord) : null;
+	
+	if(prevType === 'det' && type === 'noun') score *= 1.4;
+	if(prevType === 'adj' && type === 'noun') score *= 1.3;
+	if(prevType === 'noun' && type === 'verb') score *= 1.3;
+	if(prevType === 'adv' && type === 'verb') score *= 1.2;
+	if(prevType === 'verb' && type === 'adv') score *= 1.2;
+	if(prevType === 'prep' && type === 'det') score *= 1.3;
+	if(prevType === 'prep' && type === 'noun') score *= 1.2;
+	if(prevPrevType === 'det' && prevType === 'adj' && type === 'noun') score *= 1.5;
+	if(prevType === 'verb' && type === 'prep') score *= 1.2;
+	if(prevType === 'conj' && (type === 'noun' || type === 'verb')) score *= 1.2;
+	
+	if(prevType === 'det' && type === 'verb') score *= 0.5;
+	if(prevType === 'verb' && type === 'verb') score *= 0.6;
+	if(prevType === 'prep' && type === 'prep') score *= 0.4;
+	if(prevType === 'noun' && type === 'det') score *= 0.7;
+	
+	return score;
+}
+
 function Similarity(a, b) {
   if (a === b) return 1;
   if (a.length === 0 || b.length === 0) return 0;
@@ -291,6 +388,28 @@ function Coherence(text, corpus) {
   
   return Math.round((score / weights) * 100)/100;
 }
+let needsNext = ['det','prep','adj','conj','pron'];
+function needsCompletion(text) {
+  let words = text.trim().split(/\s+/);
+  if (words.length === 0) return false;
+  
+  let lastWord = words[words.length - 1].toLowerCase().replace(/[.!?,;:]$/g, '');
+  let lastType = getWordType(lastWord);
+  
+  if (lastType === 'det' || lastType === 'prep' || lastType === 'adj' || lastType === 'conj' || lastType === 'pron') {
+    return true;
+  }
+  
+  if (words.length >= 2) {
+    let secondLast = words[words.length - 2].toLowerCase().replace(/[.!?,;:]$/g, '');
+    let secondLastType = getWordType(secondLast);
+    if (secondLastType === 'det' && lastType === 'adj') {
+      return true;
+    }
+  }
+  
+  return false;
+}
 
 function Prediction(string, newData, predictionLength) {
 	let startingPeriod = performance.now()
@@ -318,23 +437,30 @@ function Prediction(string, newData, predictionLength) {
             wordPairs.push({
                 context: passageWords.slice(Math.max(0, i - 2), i).join(' '),
                 word: passageWords[i],
-                next: passageWords[i + 1]
+                next: passageWords[i + 1],
+                prevWord: i > 0 ? passageWords[i - 1] : null,
+                prevPrevWord: i > 1 ? passageWords[i - 2] : null
             });
         }
     });
     
-    let nextWord = (context, currentPhrase, variety=8) => {
+    let nextWord = (context, currentPhrase, variety=4*window.config.variety) => {
         let scores = [];
         let contextWords = context.toLowerCase().match(/\b\w+\b/g) || [];
         let lastWord = contextWords[contextWords.length - 1] || '';
         let lastTwoWords = contextWords.slice(-2).join(' ');
+        let prevWord = contextWords[contextWords.length - 1] || null;
+        let prevPrevWord = contextWords[contextWords.length - 2] || null;
         
         for(let pair of wordPairs) {
             let score = 0;
             
             if(pair.word === lastWord) score += 2.5;
             if(pair.context.includes(lastWord)) score += 1.2;
-            if(pair.context === lastTwoWords) score += 1.8;
+            if(pair.context === lastTwoWords || pair.context.includes(lastTwoWords)) score += 1.8;
+            
+            let gScore = grammarScore(pair.next, prevWord, prevPrevWord);
+            score *= gScore;
             
             let phraseWords = currentPhrase.toLowerCase().match(/\b\w+\b/g) || [];
             if(phraseWords.includes(pair.next)) score *= 0.4;
@@ -356,15 +482,20 @@ function Prediction(string, newData, predictionLength) {
     }
     
     let nextPhrase = (newString, variety=5, badNgramz=['shietzmane']) => {
-        let wordBuildMode = Math.random() > 0.4;
+        let wordBuildMode = Math.random() > 0.04+(window.config.plagarism/100);
         
         if(wordBuildMode) {
             let builtPhrase = '';
-            let targetLength = Math.floor(Math.random() * 7) + 3;
+            let targetLength = Math.floor(Math.random() * 9) + 3;
             
             for(let i = 0; i < targetLength; i++) {
                 let word = nextWord(newString + ' ' + builtPhrase, builtPhrase);
                 builtPhrase += (builtPhrase ? ' ' : '') + word;
+            }
+            
+            while(needsCompletion(builtPhrase)) {
+                let completionWord = nextWord(newString + ' ' + builtPhrase, builtPhrase, 6);
+                builtPhrase += ' ' + completionWord;
             }
             
             return builtPhrase;
@@ -395,7 +526,14 @@ function Prediction(string, newData, predictionLength) {
         }
         scores = scores.toSorted((a,b) => b.score - a.score);
         scores = scores.slice(0, variety);
-        return scores[Math.floor(Math.random() * scores.length)].content;
+        let selectedPhrase = scores[Math.floor(Math.random() * scores.length)].content;
+        
+        while(needsCompletion(selectedPhrase)) {
+            let completionWord = nextWord(newString + ' ' + selectedPhrase, selectedPhrase, 6);
+            selectedPhrase += ' ' + completionWord;
+        }
+        
+        return selectedPhrase;
     }
     
     let firstString = string + Punctuation(string) + ` `;
@@ -406,10 +544,17 @@ function Prediction(string, newData, predictionLength) {
         let contextString = (pastPhrases.length >= 2 ? pastPhrases[pastPhrases.length-2] : "") + pastPhrases[pastPhrases.length-1];
         let nextPiece = nextPhrase(contextString, 10, pastPhrases);
 		console.log(nextPiece);
-        let deadPhrase = nextPiece + Punctuation(nextPiece) + ` `;
+        let deadPhrase = nextPiece.substring(0,1).toUpperCase()+nextPiece.substring(1) + Punctuation(nextPiece) + ` `;
         pastPhrases.push(nextPiece);
         finalResult += deadPhrase;
     }
+    
+    while(needsCompletion(finalResult)) {
+        let contextWords = finalResult.toLowerCase().match(/\b\w+\b/g) || [];
+        let completionWord = nextWord(finalResult, finalResult, 6);
+        finalResult += completionWord + ' ';
+    }
+    
 	let time = performance.now() - startingPeriod;
 	time = time.toString().substring(0,4);
 	finalResult = finalResult.replace(firstString, "").replaceAll("\\n"," ");
@@ -429,7 +574,7 @@ window.Jabba = {
 			  .replaceAll("! ",". ")
 			  .replaceAll(", ",". ");
 		if(window.memory.length > 3)window.memory = [];
-		let result = Prediction(txt,[...trainingData,...window.messageHistory,...window.memory],Math.floor(Math.random()*(5-3))+3);
+		let result = Prediction(txt,[...trainingData,...window.messageHistory,...window.memory],window.config.length);
 		window.messageHistory.push(txt);
 		window.memory.push(
 			result.replaceAll("? ",". ")
@@ -453,8 +598,9 @@ console.log(window.Jabba.prompt("hello there danielius. please send the whereabo
   [][][]    [][][][][][][][]    [][]    [][]    [][]    [][]    [][][][][][][][]    / \     |   \__
 [][][]      [][]        [][]    [][][][][]      [][][][][]      [][]        [][]	\_/   _ /   __/
 
-{  Ver. 1.5  }
+{  Ver. 1.6  }
 
     --------->>
 ------>>
 */ 
+

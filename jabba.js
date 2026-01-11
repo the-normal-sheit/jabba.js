@@ -8,7 +8,7 @@
   [][][]    [][][][][][][][]    [][]    [][]    [][]    [][]    [][][][][][][][]    / \     |   \__
 [][][]      [][]        [][]    [][][][][]      [][][][][]      [][]        [][]	\_/   _ /   __/
 
-{  Ver. 1.6  }
+{  Ver. 1.6.1  }
 
     --------->>
 ------>>
@@ -240,21 +240,37 @@ function grammarScore(word, prevWord, prevPrevWord) {
 	let prevType = prevWord ? getWordType(prevWord) : null;
 	let prevPrevType = prevPrevWord ? getWordType(prevPrevWord) : null;
 	
-	if(prevType === 'det' && type === 'noun') score *= 1.4;
-	if(prevType === 'adj' && type === 'noun') score *= 1.3;
-	if(prevType === 'noun' && type === 'verb') score *= 1.3;
-	if(prevType === 'adv' && type === 'verb') score *= 1.2;
-	if(prevType === 'verb' && type === 'adv') score *= 1.2;
-	if(prevType === 'prep' && type === 'det') score *= 1.3;
-	if(prevType === 'prep' && type === 'noun') score *= 1.2;
-	if(prevPrevType === 'det' && prevType === 'adj' && type === 'noun') score *= 1.5;
-	if(prevType === 'verb' && type === 'prep') score *= 1.2;
-	if(prevType === 'conj' && (type === 'noun' || type === 'verb')) score *= 1.2;
+	let rules = {
+		'det-noun': 1.4,
+		'adj-noun': 1.3,
+		'noun-verb': 1.3,
+		'adv-verb': 1.2,
+		'verb-adv': 1.2,
+		'prep-det': 1.3,
+		'prep-noun': 1.2,
+		'det-adj-noun': 1.5,
+		'verb-prep': 1.2,
+		'conj-noun': 1.2,
+		'conj-verb': 1.2,
+		'det-verb': 0.5,
+		'verb-verb': 0.6,
+		'prep-prep': 0.4,
+		'noun-det': 0.7
+	};
 	
-	if(prevType === 'det' && type === 'verb') score *= 0.5;
-	if(prevType === 'verb' && type === 'verb') score *= 0.6;
-	if(prevType === 'prep' && type === 'prep') score *= 0.4;
-	if(prevType === 'noun' && type === 'det') score *= 0.7;
+	if(prevPrevType && prevType && type) {
+		let trigramKey = `${prevPrevType}-${prevType}-${type}`;
+		if(rules[trigramKey]) {
+			score *= rules[trigramKey];
+		}
+	}
+	
+	if(prevType && type) {
+		let bigramKey = `${prevType}-${type}`;
+		if(rules[bigramKey]) {
+			score *= rules[bigramKey];
+		}
+	}
 	
 	return score;
 }
@@ -598,9 +614,10 @@ console.log(window.Jabba.prompt("hello there danielius. please send the whereabo
   [][][]    [][][][][][][][]    [][]    [][]    [][]    [][]    [][][][][][][][]    / \     |   \__
 [][][]      [][]        [][]    [][][][][]      [][][][][]      [][]        [][]	\_/   _ /   __/
 
-{  Ver. 1.6  }
+{  Ver. 1.6.1  }
 
     --------->>
 ------>>
 */ 
+
 

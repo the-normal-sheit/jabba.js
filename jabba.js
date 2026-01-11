@@ -241,20 +241,21 @@ function grammarScore(word, prevWord, prevPrevWord) {
 	let prevPrevType = prevPrevWord ? getWordType(prevPrevWord) : null;
 	
 	let rules = {
-		'det-noun': 1.4,
-		'adj-noun': 1.3,
-		'noun-verb': 1.3,
-		'adv-verb': 1.2,
-		'verb-adv': 1.2,
-		'prep-det': 1.3,
-		'prep-noun': 1.2,
-		'det-adj-noun': 1.5,
-		'verb-prep': 1.2,
+		'det-noun': 2.5,
+		'adj-noun': 1.5,
+		'noun-verb': 1.5,
+		'adv-verb': 1.3,
+		'verb-adv': 1.3,
+		'prep-det': 1.5,
+		'prep-noun': 2.5,
+		'det-adj-noun': 2.5,
+		'verb-prep': 1.3,
 		'conj-noun': 1.2,
 		'conj-verb': 1.2,
-		'det-verb': 0.5,
-		'verb-verb': 0.6,
-		'prep-prep': 0.4,
+		'verb-noun':1.5,
+		'det-verb': 0.3,
+		'verb-verb': 0.5,
+		'prep-prep': 0.1,
 		'noun-det': 0.7
 	};
 	
@@ -343,7 +344,7 @@ function Punctuation(text) {
     "!": Math.min(eScore / total, 10),
     ".": Math.min(pScore / total, 10)
   };
-  return Object.keys(score).toSorted((a,b)=>b-a)[Math.floor(Math.random()*Object.keys(score).length)];
+  return Object.keys(score).toSorted((a,b)=>b-a)[Math.floor(Math.random()*2)];
 }
 function Coherence(text, corpus) {
   let score = 0;
@@ -619,5 +620,6 @@ console.log(window.Jabba.prompt("hello there danielius. please send the whereabo
     --------->>
 ------>>
 */ 
+
 
 

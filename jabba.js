@@ -8,7 +8,7 @@
   [][][]    [][][][][][][][]    [][]    [][]    [][]    [][]    [][][][][][][][]    / \     |   \__
 [][][]      [][]        [][]    [][][][][]      [][][][][]      [][]        [][]	\_/   _ /   __/
 
-{  Ver. 1.6.1  }
+{  Ver. 1.7.0  }
 
     --------->>
 ------>>
@@ -331,7 +331,7 @@ for three years in mid-2020 like it was actually named "BOT Trump" and he was fr
 `,
 `
 YOU DO! do it yourself for until you David Egan - what a bad! bad means ip of constellations bonziworld. It take JS and paster of generation!
- so why do you mean that i am the Jabba Saulut! YOU CONTENTER LOVER OF A CALLED DAVID EGAN!!! WHY IT KEEP DOING IT FOR IT? so you are the noger
+ so why do you mean that i am the Jabba Saulut! YOU CONTENTER LOVER OF A CALLED DAVID EGAN!!! WHY IT KEEP DOING IT FOR IT? so you are the nigger
  that protegent ass! kiss me jabba call me onute the IUS! Why is ICS ban me, is she pitch black muslim! UNBAND ME FROM A BONZIWORD? NOW!!!!!
  WHAT A FUCKER! I CAN DDOS WITH STRESSTHEM LOIC NET SO YOU CAN DDOSER OF DOXER OF IP ISP ROUTER! YOU ARE HAVE A GROUNDED FOR UNTIL 
  365687325663587265287567568765289238561592365 SUPERFUCKODICKING DUOTRIOQUATTEROBILLIMILLION ERAPLEXERFUCKERILITIES UNTIL YOU DO A WORKER SLAVE IS!! ENTER T.I. ROOM OR I APPLE PEAR AT YOU YOU BREAD ASS!!!!!!!!!!!!!!!!!!!!!!
@@ -340,7 +340,7 @@ You are so so so grounded for 9999 decillion chrinchubillion trigonomintillion o
  now your ip address right of now.
 `
 ];
-console.log('initializing');
+console.log("initializing");
 let associations = {
 	"you":"me",
 	"my":"his",
@@ -364,7 +364,7 @@ function getWordType(word) {
 	for(let type in posPatterns) {
 		if(posPatterns[type].test(word)) return type;
 	}
-	return 'unknown';
+	return "unknown";
 }
 
 function grammarScore(word, prevWord, prevPrevWord) {
@@ -374,22 +374,22 @@ function grammarScore(word, prevWord, prevPrevWord) {
 	let prevPrevType = prevPrevWord ? getWordType(prevPrevWord) : null;
 	
 	let rules = {
-		'det-noun': 2.5,
-		'adj-noun': 1.5,
-		'noun-verb': 1.5,
-		'adv-verb': 1.3,
-		'verb-adv': 1.3,
-		'prep-det': 1.5,
-		'prep-noun': 2.5,
-		'det-adj-noun': 2.5,
-		'verb-prep': 1.3,
-		'conj-noun': 1.2,
-		'conj-verb': 1.2,
-		'verb-noun':1.5,
-		'det-verb': 0.3,
-		'verb-verb': 0.5,
-		'prep-prep': 0.1,
-		'noun-det': 0.7
+		"det-noun": 2.5,
+		"adj-noun": 1.5,
+		"noun-verb": 1.5,
+		"adv-verb": 1.3,
+		"verb-adv": 1.3,
+		"prep-det": 1.5,
+		"prep-noun": 2.5,
+		"det-adj-noun": 2.5,
+		"verb-prep": 1.3,
+		"conj-noun": 1.2,
+		"conj-verb": 1.2,
+		"verb-noun":1.5,
+		"det-verb": 0.3,
+		"verb-verb": 0.5,
+		"prep-prep": 0.1,
+		"noun-det": 0.7
 	};
 	
 	if(prevPrevType && prevType && type) {
@@ -447,9 +447,9 @@ function Punctuation(text) {
   
   let qScore = 0, eScore = 0, pScore = 0;
   
-  let words = text.split(/\s+/);
-  let firstWord = words[0] || '';
-  let lastWord = words[words.length - 1] || '';
+  let words = text.toLowerCase().match(/\b[\w']+\b/g) || [];
+  let firstWord = words[0] || "";
+  let lastWord = words[words.length - 1] || "";
   
   if (/^(who|what|when|where|why|how|which|whose|whom)/.test(firstWord)) qScore += 0.6;
   if (/^(is|are|was|were|do|does|did|can|could|would|should|will|shall|may|might|have|has|had)/.test(firstWord)) qScore += 0.4;
@@ -483,7 +483,7 @@ function Coherence(text, corpus) {
   let score = 0;
   let weights = 0;
   
-  let words = text.toLowerCase().match(/\b\w+\b/g) || [];
+  let words = text.toLowerCase().match(/\b[\w']+\b/g) || [];
   let sentences = text.match(/[^.!?]+[.!?]+/g) || [text];
   
   if (words.length === 0) return 0;
@@ -492,13 +492,13 @@ function Coherence(text, corpus) {
   let corpusBigrams = new Set();
   let corpusTrigrams = new Set();
   corpus.forEach(doc => {
-    let cWords = doc.toLowerCase().match(/\b\w+\b/g) || [];
+    let cWords = doc.toLowerCase().match(/\b[\w']+\b/g) || [];
     cWords.forEach(w => corpusWords.add(w));
     for (let i = 0; i < cWords.length - 1; i++) {
-      corpusBigrams.add(cWords[i] + ' ' + cWords[i + 1]);
+      corpusBigrams.add(cWords[i] + " " + cWords[i + 1]);
     }
     for (let i = 0; i < cWords.length - 2; i++) {
-      corpusTrigrams.add(cWords[i] + ' ' + cWords[i + 1] + ' ' + cWords[i + 2]);
+      corpusTrigrams.add(cWords[i] + " " + cWords[i + 1] + " " + cWords[i + 2]);
     }
   });
   
@@ -508,7 +508,7 @@ function Coherence(text, corpus) {
   
   let bigramMatches = 0;
   for (let i = 0; i < words.length - 1; i++) {
-    if (corpusBigrams.has(words[i] + ' ' + words[i + 1])) bigramMatches++;
+    if (corpusBigrams.has(words[i] + " " + words[i + 1])) bigramMatches++;
   }
   if (words.length > 1) {
     score += (bigramMatches / (words.length - 1)) * 30;
@@ -517,7 +517,7 @@ function Coherence(text, corpus) {
   
   let trigramMatches = 0;
   for (let i = 0; i < words.length - 2; i++) {
-    if (corpusTrigrams.has(words[i] + ' ' + words[i + 1] + ' ' + words[i + 2])) trigramMatches++;
+    if (corpusTrigrams.has(words[i] + " " + words[i + 1] + " " + words[i + 2])) trigramMatches++;
   }
   if (words.length > 2) {
     score += (trigramMatches / (words.length - 2)) * 20;
@@ -538,22 +538,22 @@ function Coherence(text, corpus) {
   
   return Math.round((score / weights) * 100)/100;
 }
-let needsNext = ['det','prep','adj','conj','pron'];
+let needsNext = ["det","prep","adj","conj","pron"];
 function needsCompletion(text) {
   let words = text.trim().split(/\s+/);
   if (words.length === 0) return false;
   
-  let lastWord = words[words.length - 1].toLowerCase().replace(/[.!?,;:]$/g, '');
+  let lastWord = words[words.length - 1].toLowerCase().replace(/[.!?,;:]$/g, "");
   let lastType = getWordType(lastWord);
   
-  if (lastType === 'det' || lastType === 'prep' || lastType === 'adj' || lastType === 'conj' || lastType === 'pron') {
+  if (lastType === "det" || lastType === "prep" || lastType === "adj" || lastType === "conj" || lastType === "pron") {
     return true;
   }
   
   if (words.length >= 2) {
-    let secondLast = words[words.length - 2].toLowerCase().replace(/[.!?,;:]$/g, '');
+    let secondLast = words[words.length - 2].toLowerCase().replace(/[.!?,;:]$/g, "");
     let secondLastType = getWordType(secondLast);
-    if (secondLastType === 'det' && lastType === 'adj') {
+    if (secondLastType === "det" && lastType === "adj") {
       return true;
     }
   }
@@ -582,14 +582,15 @@ function Prediction(string, newData, predictionLength) {
             sentences.forEach(sentence => {data.push(sentence);});
         }
         
-        let passageWords = textPassage.toLowerCase().match(/\b\w+\b/g) || [];
+        let passageWords = textPassage.toLowerCase().match(/\b[\w']+\b/g) || [];
         for(let i = 0; i < passageWords.length - 1; i++) {
             wordPairs.push({
-                context: passageWords.slice(Math.max(0, i - 2), i).join(' '),
+                context: passageWords.slice(Math.max(0, i - 2), i).join(" "),
                 word: passageWords[i],
                 next: passageWords[i + 1],
                 prevWord: i > 0 ? passageWords[i - 1] : null,
-                prevPrevWord: i > 1 ? passageWords[i - 2] : null
+                prevPrevWord: i > 1 ? passageWords[i - 2] : null,
+				allPrevious: i > 0 ? passageWords.slice(0,i) : null
             });
         }
     });
@@ -597,8 +598,8 @@ function Prediction(string, newData, predictionLength) {
     let nextWord = (context, currentPhrase, variety=4*window.config.variety) => {
         let scores = [];
         let contextWords = context.toLowerCase().match(/\b\w+\b/g) || [];
-        let lastWord = contextWords[contextWords.length - 1] || '';
-        let lastTwoWords = contextWords.slice(-2).join(' ');
+        let lastWord = contextWords[contextWords.length - 1] || "";
+        let lastTwoWords = contextWords.slice(-2).join(" ");
         let prevWord = contextWords[contextWords.length - 1] || null;
         let prevPrevWord = contextWords[contextWords.length - 2] || null;
         
@@ -606,8 +607,15 @@ function Prediction(string, newData, predictionLength) {
             let score = 0;
             
             if(pair.word === lastWord) score += 2.5;
-            if(pair.context.includes(lastWord)) score += 1.2;
-            if(pair.context === lastTwoWords || pair.context.includes(lastTwoWords)) score += 1.8;
+            /*if(pair.context.includes(lastWord)) score += 1.2;
+            if(pair.context === lastTwoWords || pair.context.includes(lastTwoWords)) score += 1.8;*/
+			let accumulator = 1;
+			contextWords.forEach(contextWord => {
+				if(pair.context.includes(contextWord)){
+					accumulator+=0.1;
+					score+=accumulator;
+				}
+			});
             
             let gScore = grammarScore(pair.next, prevWord, prevPrevWord);
             score *= gScore;
@@ -631,33 +639,33 @@ function Prediction(string, newData, predictionLength) {
         return scores[Math.floor(Math.random() * scores.length)].word;
     }
     
-    let nextPhrase = (newString, variety=5, badNgramz=['shietzmane']) => {
+    let nextPhrase = (newString, variety=5, badNgramz=["shietzmane"]) => {
         let wordBuildMode = Math.random() > 0.04+(window.config.plagarism/100);
         
         if(wordBuildMode) {
-            let builtPhrase = '';
+            let builtPhrase = "";
             let targetLength = Math.floor(Math.random() * 9) + 3;
             
             for(let i = 0; i < targetLength; i++) {
-                let word = nextWord(newString + ' ' + builtPhrase, builtPhrase);
-                builtPhrase += (builtPhrase ? ' ' : '') + word;
+                let word = nextWord(newString + " " + builtPhrase, builtPhrase);
+                builtPhrase += (builtPhrase ? " " : "") + word;
             }
             
             while(needsCompletion(builtPhrase)) {
-                let completionWord = nextWord(newString + ' ' + builtPhrase, builtPhrase, 6);
-                builtPhrase += ' ' + completionWord;
+                let completionWord = nextWord(newString + " " + builtPhrase, builtPhrase, 6);
+                builtPhrase += " " + completionWord;
             }
             
             return builtPhrase;
         }
         
-        let importanceMap = {s:0.5, c:1.3}
-        let result = '';
+        let importanceMap = {s:0.2, c:1.5}
+        let result = "";
         let scores = [];
         for(let i = 0; i < data.length; i++) {
-            let dataString = data[i].split('|output|:');
+            let dataString = data[i].split("|output|:");
             let newScore = 1;
-            let dataStringResult = '';
+            let dataStringResult = "";
             if(dataString.length > 1) {
                 dataStringResult = dataString[1];
             } else {
@@ -670,17 +678,22 @@ function Prediction(string, newData, predictionLength) {
             if(!badNgramz.some(r => dataStringResult.toLowerCase().includes(r.toLowerCase()) || r.toLowerCase().includes(dataStringResult.toLowerCase()) ) ) {
                 scores.push({
                     score: newScore,
-                    content: dataStringResult
+                    content: dataStringResult.split(" ").slice(
+								0
+								,
+								Math.floor(dataStringResult.split(" ").length/3)
+					).join(" ")
+					
                 });
             }
         }
         scores = scores.toSorted((a,b) => b.score - a.score);
         scores = scores.slice(0, variety);
         let selectedPhrase = scores[Math.floor(Math.random() * scores.length)].content;
-        
+        console.log(scores);
         while(needsCompletion(selectedPhrase)) {
-            let completionWord = nextWord(newString + ' ' + selectedPhrase, selectedPhrase, 6);
-            selectedPhrase += ' ' + completionWord;
+            let completionWord = nextWord(newString + " " + selectedPhrase, selectedPhrase, 6);
+            selectedPhrase += " " + completionWord;
         }
         
         return selectedPhrase;
@@ -693,15 +706,21 @@ function Prediction(string, newData, predictionLength) {
     for(let i = 0; i < predictionLength; i++) {
         let contextString = (pastPhrases.length >= 2 ? pastPhrases[pastPhrases.length-2] : "") + pastPhrases[pastPhrases.length-1];
         let nextPiece = nextPhrase(contextString, 10, pastPhrases);
-        let deadPhrase = nextPiece.substring(0,1).toUpperCase()+nextPiece.substring(1) + Punctuation(nextPiece) + ` `;
+		let punctuate = Punctuation(nextPiece);
+		let finalPhrase = nextPiece.substring(0,1).toUpperCase()+nextPiece.substring(1);
+		//if(punctuate == "!" && Math.random() > 0.95)
+			
+        let deadPhrase = finalPhrase + punctuate + ` `;
         pastPhrases.push(nextPiece);
         finalResult += deadPhrase;
     }
+	
+	
     
     while(needsCompletion(finalResult)) {
         let contextWords = finalResult.toLowerCase().match(/\b\w+\b/g) || [];
         let completionWord = nextWord(finalResult, finalResult, 6);
-        finalResult += completionWord + ' ';
+        finalResult += completionWord + " ";
     }
     
 	let time = performance.now() - startingPeriod;
@@ -747,7 +766,7 @@ console.log(window.Jabba.prompt("hello there danielius. please send the whereabo
   [][][]    [][][][][][][][]    [][]    [][]    [][]    [][]    [][][][][][][][]    / \     |   \__
 [][][]      [][]        [][]    [][][][][]      [][][][][]      [][]        [][]	\_/   _ /   __/
 
-{  Ver. 1.6.1  }
+{  Ver. 1.7.0  }
 
     --------->>
 ------>>
